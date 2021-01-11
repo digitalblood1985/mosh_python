@@ -1,0 +1,9 @@
+# This program displays the shape of 'F' using a list mentioned below:
+# [5, 2, 5, 2, 2]
+list = [5, 2, 5, 2, 2]
+
+for i in list:
+    display_line = ''
+    for j in range(i):
+        display_line += 'X'
+    print(display_line)
