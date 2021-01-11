@@ -2,8 +2,8 @@
 # [5, 2, 5, 2, 2]
 list = [5, 2, 5, 2, 2]
 
-for i in list:
+for x_count in list:
     display_line = ''
-    for j in range(i):
+    for count in range(x_count):
         display_line += 'X'
     print(display_line)
