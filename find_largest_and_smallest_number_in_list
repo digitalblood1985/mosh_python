@@ -1,0 +1,11 @@
+# This program finds the largest and smallest number in the list
+number_list = [325, 57, 878, 234, 7899, 2334, 9889]
+largest_num = number_list[0]
+smallest_num = number_list[0]
+
+for number in number_list:
+    if number > largest_num:
+        largest_num = number
+    if number < smallest_num:
+        smallest_num = number
+print(F"The largest number is: {largest_num}, and the smallest number is: {smallest_num}")
