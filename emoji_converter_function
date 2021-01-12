@@ -1,0 +1,12 @@
+def emoji_converter(sentence):
+    output_sentence = ''
+    sentence_in_list = sentence.split(' ')
+
+    emojis = {":-)": "😊", ":)": "😊", ":-(": "😢", ":(": "😢", ":-P": "😜", ":P": "😜", ":lol": "🤣"}
+
+    for word in sentence_in_list:
+        output_sentence += emojis.get(word, word) + " "
+    return output_sentence
+
+
+print(emoji_converter(input("> ")))
