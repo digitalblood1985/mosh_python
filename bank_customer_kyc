@@ -1,0 +1,47 @@
+class Person:
+    def __init__(self, customer_id, name):
+        self.customer_id = customer_id
+        self.name = name
+
+    def set_pan(self, pan):
+        self.pan = pan
+
+    def set_aadhaar(self, aadhaar):
+        self.aadhaar = aadhaar
+
+    def set_address(self, address):
+        self.address = address
+
+    def get_pan(self):
+        return self.pan
+
+    def get_aadhaar(self):
+        return self.aadhaar
+
+    def get_address(self):
+        return self.address
+
+    def get_all_kyc_details(self):
+        print(F"""
+Name: {self.name}
+PAN Card Number: {self.pan}
+Aadhaar Number: {self.aadhaar}
+PIN-code: {self.address}
+        """)
+
+    def set_all_kyc_details(self, pan, aadhaar, address):
+        self.pan = pan
+        self.aadhaar = aadhaar
+        self.address = address
+
+
+p1 = Person(1, "Nandish Shanabog")
+p1.set_pan("AHCPN8016G")
+p1.set_aadhaar("6929-2143-4928")
+p1.set_address("No 71, 3rd Cross, Jain Layout, Behind Old Manipal Hospital, Rajarajeshwari Nagar, Bangalore - 560098.")
+
+pan_card_number = p1.get_pan()
+print(pan_card_number)
+p1.get_all_kyc_details()
+p1.set_pan("AFOPC9719Q")
+print(pan_card_number)
