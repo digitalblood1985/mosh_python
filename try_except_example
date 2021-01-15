@@ -1,0 +1,9 @@
+try:
+    income = int(input("Income: "))
+    age = int(input("Age: "))
+    risk = income / age
+    print(F"Income is {income}, and age is {age}. Income to age ratio is {income/age}.")
+except ZeroDivisionError:
+    print("Age can not be ZERO.")
+except ValueError:
+    print("Invalid Inputs. Please retry.")
