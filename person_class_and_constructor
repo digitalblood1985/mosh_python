@@ -1,0 +1,18 @@
+class Person:
+    def __init__(self, name, pan, aadhaar, pin_code):
+        self.name = name
+        self.pan = pan
+        self.aadhaar = aadhaar
+        self.pin_code = pin_code
+
+    def tell_kyc_details(self):
+        print(F"""
+Name: {self.name}
+PAN Card Number: {self.pan}
+Aadhaar Number: {self.aadhaar}
+PIN-code: {self.pin_code}
+        """)
+
+
+p1 = Person("Nandish Shanabog", "AHCPN8016G", "6929-2143-4928", "560098")
+p1.tell_kyc_details()
