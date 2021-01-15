@@ -1,0 +1,17 @@
+class Point:
+    def move(self, x1, y1):
+        print(F"The point ({self.x}, {self.y}) is moved to ({x1}, {y1}).")
+        self.x = x1
+        self.y = y1
+
+    def draw(self):
+        print(F"Drawing the point ({self.x}, {self.y}) on 2-D plane.")
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+point1 = Point(10, 20)
+point1.draw()
+point1.move(30, 40)
