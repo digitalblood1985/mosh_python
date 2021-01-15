@@ -1,0 +1,13 @@
+import random
+
+
+class Dice:
+    def roll_pair_of_dice(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return (first, second)
+
+
+dice = Dice()
+(first, second) = dice.roll_pair_of_dice()
+print(F"({first}, {second})")
