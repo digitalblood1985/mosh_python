@@ -1,0 +1,8 @@
+from pathlib import Path
+
+
+path01 = Path("Temp_Folder")
+path01.mkdir()
+
+path02 = Path("Temp_Folder")
+path02.rmdir()
