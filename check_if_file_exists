@@ -1,0 +1,6 @@
+from pathlib import Path
+
+
+path = Path("transactions.xlsx")  # File name to check
+exist_or_not = path.exists()
+print(exist_or_not)
