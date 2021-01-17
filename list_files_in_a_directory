@@ -1,0 +1,7 @@
+from pathlib import Path
+
+
+path = Path()
+files = path.glob("*.*")
+for file_name in files:
+    print(file_name) 
