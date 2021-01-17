@@ -1,0 +1,14 @@
+import openpyxl
+
+
+work_book = openpyxl.load_workbook("transactions.xlsx")
+sheet = work_book["Sheet1"]
+
+for row in range(2, sheet.max_row + 1):
+    cell = sheet.cell(row, 3)
+    price = cell.value
+    corrected_price = price * 0.9
+
+    sheet.cell(row, 4).value = corrected_price
+
+work_book.save("transactions2.xlsx")
